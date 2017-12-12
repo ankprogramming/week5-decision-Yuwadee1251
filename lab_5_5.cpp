@@ -1,11 +1,11 @@
 #include <iostream>
 #include <string>
-
+using namespace std;
 int main () {
 
-  string playerName;
+  string PlayerName;
   int score = 0, life = 3;
-  char choice1
+  char choice1;
   // ประกาศตัวแปรเพื่อรับการเลือกคำตอบของผู้เล่น
   // เช่นการเป็น ตัวเลขให้ประกาศเป็น int choice1;
   // ถ้ารับคำตอบเป็นตัวอักษร ให้ประกาศเป็น char choice1;
@@ -27,8 +27,8 @@ int main () {
   // เขียนคำสั่งแสดงผล คำบรรยายสภาพแวดล้อม สถานการณ์ และคำทักทายที่มีชื่อตัวละคร
   // เช่น cout << "Hello " << playerName << ". You are in Robinson. You are walking happily. Suddenly you realize that forgetting the wallet."
   // << " But you're lazy to get back to get it." << endl;
-    cout << "Hello " << playerName << ". You are in Robinson. You are walking happily. Suddenly you realize that forgetting the wallet."
-    << " But you're lazy to get back to get it." << endl;
+    cout << "Hello " << PlayerName << ". You are in Robinson. You are walking happily. Suddenly you realize that forgetting the wallet.";
+cout << " But you're lazy to get back to get it." << endl;
   // เขียนคำสั่งแสดงผล คำถามให้ผู้ใช้ตัดสินใจ
   // เช่น cout << "What should you do? (A)sk for money,(S)teal : ";
     cout << "What should you do? (A)sk for money,(S)teal : ";
@@ -40,16 +40,18 @@ int main () {
   //        case "S" : score += 10; life -= 1; cout << "You stole money from people. Now you can shopping.";
   //        case "A" : score += 50; cout << "You ask for money from people then you get 100 baht. You are very happy. Now you can shopping."
   //     }
-cin >> choice1;
+    cin >> choice1;
+
    switch(choice1) {
-   case "A" :
+   case 'A' :
    score += 50;
-   cout << "You ask for money from people then you get 100 baht. You are very happy. Now you can shopping."
-   case "S" :
+   cout << "You ask for money from people then you get 100 baht. You are very happy. Now you can shopping.";
+   break;
+   case 'S' :
    score += 10;
    life -= 1;
    cout << "You stole money from people. Now you can shopping.";
-
+   break ;
 }
 
   // ฝึกสร้างสถานการณ์และสร้างเงื่อนไข อีก 2 สถานการณ์
